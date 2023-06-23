@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "e/z8S0Zo2+PeuHyWSO+HElmXsxuF+TKzJCThhPRTRWy+JgFFoSFnJwaalzVSSYzX2YfkKDF6+9VzWnurBU9HDA==",
+  "dgSpecHash": "KxiVEe1ynPOkCIkwpkwGZopbCT0pBPnAYExIHvSgsIuxr50txgG2MaMGx+VeQgIgZhVLrsjg/SzPGjCMa3KrgQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCardPasta\\NewCard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EuTay\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\EuTay\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.8\\microsoft.aspnetcore.authentication.jwtbearer.7.0.8.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",

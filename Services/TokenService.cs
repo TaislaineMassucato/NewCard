@@ -1,6 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using NewCard.Models;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 
 namespace NewCard.Services
@@ -8,23 +9,33 @@ namespace NewCard.Services
     public class TokenService
     {
         public string GerarToken(Funcionario funcionario)
-        {
-            //Manipulador Token
-            var tokenHandler = new JwtSecurityTokenHandler();
+        {   
+            //Manioulador de Token
+            var handlerToken = new JwtSecurityTokenHandler();
 
-            //Capturar chave de string de discriptografar (Keyacesso)
-            //Converter Bytes
+            //CAPTURANDO tOKEN DE ACESSO PARA MANIPULAÇÃO
+                //COVERTENDO PARA BYTE
             var key = Encoding.ASCII.GetBytes(Configuracao.JWTkey);
 
-            //Descricao Token (Info)
-            var tokenDescriptor = new SecurityTokenDescriptor
+            //Infos (Descrição) token
+            var infosToken = new SecurityTokenDescriptor
             {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, "Taislaine"),
+                    new Claim(ClaimTypes.Role, "Funcionario"),
+                    new Claim(ClaimTypes.Role, "Medico"),
+                    new Claim("fruta", "banana"),
+                }),
                 Expires = DateTime.UtcNow.AddHours(8),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+                SigningCredentials = new SigningCredentials( new SymmetricSecurityKey(key),SecurityAlgorithms.HmacSha256Signature)
             };
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+            //Criando Token con base nas infos
+            var token = handlerToken.CreateToken(infosToken);
+
+            //convertendo token para string
+            return handlerToken.WriteToken(token);
 
         }
     }
