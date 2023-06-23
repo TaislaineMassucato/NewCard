@@ -78,6 +78,7 @@ C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\NewCard.
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Humanizer.dll
+C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
