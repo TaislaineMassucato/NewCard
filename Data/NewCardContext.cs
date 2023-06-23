@@ -6,8 +6,7 @@ namespace NewCard.Data;
 
 public class NewCardContext : DbContext
 {
-    public DbSet<Consulta> Consulta { get; set; }
-
+     public DbSet<Consulta> Consultas { get; set; }
      public DbSet<Especialidade> Especialidades { get; set; }
      public DbSet<Funcionario> Funcionarios { get; set; }
      public DbSet<HistoricoConsulta> HistoricoConsulta { get; set; }
@@ -15,8 +14,8 @@ public class NewCardContext : DbContext
      public DbSet<Mensagem> Mensagems { get; set; }
      public DbSet<Paciente> Pacientes { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsEntity)
-        => optionsEntity.UseSqlServer("Server=localhost,1433;Database=NewCard2;User ID=sa;Password=1q2w3e4r@#$;TrustServerCertificate=True");
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        => optionsBuilder.UseSqlServer("Server=localhost,1433;Database=NewCard2;User ID=sa;Password=1q2w3e4r@#$;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

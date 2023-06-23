@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCard\\NewCard.csproj": {}
+    "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCardPasta\\NewCard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCard\\NewCard.csproj": {
+    "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCardPasta\\NewCard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCard\\NewCard.csproj",
+        "projectUniqueName": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCardPasta\\NewCard.csproj",
         "projectName": "NewCard",
-        "projectPath": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCard\\NewCard.csproj",
+        "projectPath": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCardPasta\\NewCard.csproj",
         "packagesPath": "C:\\Users\\EuTay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCard\\obj\\",
+        "outputPath": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCardPasta\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

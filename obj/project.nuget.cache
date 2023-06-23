@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jry7gCqYZR1xphvRJwF1xgvA792dYBlelFKN12Yq9rw1XLNQtYjKDbhz3ZDrRVafIH6stOg8Yc9T11pOeonWLw==",
+  "dgSpecHash": "e/z8S0Zo2+PeuHyWSO+HElmXsxuF+TKzJCThhPRTRWy+JgFFoSFnJwaalzVSSYzX2YfkKDF6+9VzWnurBU9HDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCard\\NewCard.csproj",
+  "projectFilePath": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCardPasta\\NewCard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EuTay\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -17,7 +17,7 @@ namespace NewCard.Controller
             try
             {
                 var fun = await context.Funcionarios.ToListAsync();
-
+              
                 return Ok(new ResultViewModel<List<Funcionario>>(fun));
             }
             catch
