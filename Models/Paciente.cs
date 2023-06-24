@@ -12,9 +12,9 @@ public class Paciente
 
     public DateTime DataNascimento { get; set; }
 
-    public virtual ICollection<Consulta> Consulta { get; set; } = new List<Consulta>();
+    public ICollection<Consulta> Consulta { get; set; } = new List<Consulta>();
 
-    public virtual ICollection<HistoricoConsulta> HistoricoConsulta { get; set; } = new List<HistoricoConsulta>();
+    public ICollection<HistoricoConsulta> HistoricoConsulta { get; set; } = new List<HistoricoConsulta>();
 
-    public virtual ICollection<Mensagem> Mensagems { get; set; } = new List<Mensagem>();
+    public ICollection<Mensagem> Mensagems { get; set; } = new List<Mensagem>();
 }

@@ -19,6 +19,7 @@ namespace NewCard.Data.Mappings
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("nome");
+
         }
     }
 }

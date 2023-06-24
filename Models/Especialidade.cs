@@ -6,5 +6,5 @@ public class Especialidade
 
     public string Nome { get; set; }
 
-    public virtual ICollection<Medico> Medicos { get; set; } = new List<Medico>();
+    public ICollection<Medico> Medicos { get; set; } = new List<Medico>();
 }

@@ -6,15 +6,15 @@ public class Medico
 
     public string Nome { get; set; }
 
-    public int? EspecialidadeId { get; set; }
+    public int EspecialidadeId { get; set; }
 
     public string Telefone { get; set; }
 
     public string Email { get; set; }
 
-    public virtual ICollection<Consulta> Consulta { get; set; } = new List<Consulta>();
+    public ICollection<Consulta> Consulta { get; set; } = new List<Consulta>();
 
-    public virtual Especialidade Especialidade { get; set; }
+    public Especialidade Especialidade { get; set; }
 
-    public virtual ICollection<HistoricoConsulta> HistoricoConsulta { get; set; } = new List<HistoricoConsulta>();
+    public ICollection<HistoricoConsulta> HistoricoConsulta { get; set; } = new List<HistoricoConsulta>();
 }

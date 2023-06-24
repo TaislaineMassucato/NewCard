@@ -9,7 +9,7 @@ public class NewCardContext : DbContext
      public DbSet<Consulta> Consultas { get; set; }
      public DbSet<Especialidade> Especialidades { get; set; }
      public DbSet<Funcionario> Funcionarios { get; set; }
-     public DbSet<HistoricoConsulta> HistoricoConsulta { get; set; }
+     public DbSet<HistoricoConsulta> HistoricoConsultas { get; set; }
      public DbSet<Medico> Medicos { get; set; }
      public DbSet<Mensagem> Mensagems { get; set; }
      public DbSet<Paciente> Pacientes { get; set; }
