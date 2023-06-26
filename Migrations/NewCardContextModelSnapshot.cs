@@ -22,21 +22,6 @@ namespace NewCard.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MedicoEspecialidade", b =>
-                {
-                    b.Property<int>("EspecialidadeId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MedicoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("EspecialidadeId", "MedicoId");
-
-                    b.HasIndex("MedicoId");
-
-                    b.ToTable("MedicoEspecialidade");
-                });
-
             modelBuilder.Entity("NewCard.Models.Consulta", b =>
                 {
                     b.Property<int>("Id")
@@ -109,22 +94,32 @@ namespace NewCard.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(255)")
+                        .HasColumnName("email");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(255)")
+                        .HasColumnName("nome");
 
                     b.Property<string>("Senha")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(255)")
+                        .HasColumnName("senha");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Funcionarios");
+                    b.ToTable("Funcionario", (string)null);
                 });
 
             modelBuilder.Entity("NewCard.Models.HistoricoConsulta", b =>
@@ -199,6 +194,9 @@ namespace NewCard.Migrations
                     b.Property<int>("EspecialidadeId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("EspecialidadeId1")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nome")
                         .HasMaxLength(255)
                         .IsUnicode(false)
@@ -214,6 +212,8 @@ namespace NewCard.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("EspecialidadeId");
+
+                    b.HasIndex("EspecialidadeId1");
 
                     b.ToTable("Medico", (string)null);
                 });
@@ -292,27 +292,12 @@ namespace NewCard.Migrations
                     b.ToTable("Paciente", (string)null);
                 });
 
-            modelBuilder.Entity("MedicoEspecialidade", b =>
-                {
-                    b.HasOne("NewCard.Models.Especialidade", null)
-                        .WithMany()
-                        .HasForeignKey("EspecialidadeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("NewCard.Models.Medico", null)
-                        .WithMany()
-                        .HasForeignKey("MedicoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("NewCard.Models.Consulta", b =>
                 {
                     b.HasOne("NewCard.Models.Medico", "Medico")
                         .WithMany()
                         .HasForeignKey("MedicoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired()
                         .HasConstraintName("FK_Consulta_Medico");
 
@@ -323,7 +308,7 @@ namespace NewCard.Migrations
                     b.HasOne("NewCard.Models.Paciente", "Paciente")
                         .WithMany()
                         .HasForeignKey("PacienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired()
                         .HasConstraintName("FK_Consulta_Paciente");
 
@@ -341,7 +326,7 @@ namespace NewCard.Migrations
                     b.HasOne("NewCard.Models.Medico", "Medico")
                         .WithMany()
                         .HasForeignKey("MedicoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired()
                         .HasConstraintName("FK_HistoricoConsulta_Medico");
 
@@ -352,7 +337,7 @@ namespace NewCard.Migrations
                     b.HasOne("NewCard.Models.Paciente", "Paciente")
                         .WithMany()
                         .HasForeignKey("PacienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired()
                         .HasConstraintName("FK_HistoricoConsulta_Paciente");
 
@@ -370,9 +355,13 @@ namespace NewCard.Migrations
                     b.HasOne("NewCard.Models.Especialidade", "Especialidade")
                         .WithMany()
                         .HasForeignKey("EspecialidadeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired()
                         .HasConstraintName("FK_Medico_Especialidade");
+
+                    b.HasOne("NewCard.Models.Especialidade", null)
+                        .WithMany("Medicos")
+                        .HasForeignKey("EspecialidadeId1");
 
                     b.Navigation("Especialidade");
                 });
@@ -382,7 +371,7 @@ namespace NewCard.Migrations
                     b.HasOne("NewCard.Models.Paciente", "Destinatario")
                         .WithMany()
                         .HasForeignKey("DestinatarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired()
                         .HasConstraintName("FK_Mensagem_Paciente");
 
@@ -391,6 +380,11 @@ namespace NewCard.Migrations
                         .HasForeignKey("PacienteId");
 
                     b.Navigation("Destinatario");
+                });
+
+            modelBuilder.Entity("NewCard.Models.Especialidade", b =>
+                {
+                    b.Navigation("Medicos");
                 });
 
             modelBuilder.Entity("NewCard.Models.Medico", b =>

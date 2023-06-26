@@ -98,6 +98,7 @@ C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Microsof
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\SecureIdentity.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\System.Drawing.Common.dll

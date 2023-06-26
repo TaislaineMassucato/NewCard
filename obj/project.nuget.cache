@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KxiVEe1ynPOkCIkwpkwGZopbCT0pBPnAYExIHvSgsIuxr50txgG2MaMGx+VeQgIgZhVLrsjg/SzPGjCMa3KrgQ==",
+  "dgSpecHash": "zMBOQkH8pd19D/mOgZhUXZDIDOyw/KWAZgvFMZiSV9QFMt2aKj1o26JIRrWjl4YtzfD3Qq0jK++odiZqrZExSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\EuTay\\OneDrive\\Área de Trabalho\\NewCardPasta\\NewCard.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\EuTay\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\EuTay\\.nuget\\packages\\secureidentity\\1.0.4\\secureidentity.1.0.4.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\EuTay\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

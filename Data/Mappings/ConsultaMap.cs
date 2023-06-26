@@ -27,15 +27,17 @@ namespace NewCard.Data.Mappings
                 .IsUnicode(false)
                 .HasColumnName("status");
 
-            builder.HasOne(d => d.Medico)
+            builder.HasOne(d => d.MedicoConsultaId)
                 .WithMany()
                 .HasForeignKey(d => d.MedicoId)
-                .HasConstraintName("FK_Consulta_Medico");
+                .HasConstraintName("FK_Consulta_Medico")
+                .OnDelete(DeleteBehavior.NoAction);
 
-            builder.HasOne(d => d.Paciente)
+            builder.HasOne(d => d.PacienteConsultaId)
                 .WithMany()
                 .HasForeignKey(d => d.PacienteId)
-                .HasConstraintName("FK_Consulta_Paciente");
+                .HasConstraintName("FK_Consulta_Paciente")
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

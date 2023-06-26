@@ -4,12 +4,12 @@ using NewCard.Models;
 
 namespace NewCard.Data.Mappings
 {
-    public class MedicoMap : IEntityTypeConfiguration<Medico>
+    public class FuncionarioMap : IEntityTypeConfiguration<Funcionario>
     {
-        public void Configure(EntityTypeBuilder<Medico> builder)
+        public void Configure(EntityTypeBuilder<Funcionario> builder)
         {
             builder.HasKey(e => e.Id);
-            builder.ToTable("Medico");
+            builder.ToTable("Funcionario");
 
             builder.Property(e => e.Id)
                 .HasColumnName("id")
@@ -20,21 +20,15 @@ namespace NewCard.Data.Mappings
                 .IsUnicode(false)
                 .HasColumnName("nome");
 
-            builder.Property(e => e.Telefone)
-                .HasMaxLength(20)
-                .IsUnicode(false)
-                .HasColumnName("telefone");
-
             builder.Property(e => e.Email)
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("email");
 
-            builder.HasOne(d => d.EspecialidadeMedico)
-                .WithMany()
-                .HasForeignKey(d => d.EspecialidadeId)
-                .HasConstraintName("FK_Medico_Especialidade")
-                .OnDelete(DeleteBehavior.NoAction);
+            builder.Property(e => e.Senha)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("senha");
         }
     }
 }

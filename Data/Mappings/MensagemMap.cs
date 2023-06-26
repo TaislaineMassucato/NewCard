@@ -25,7 +25,8 @@ namespace NewCard.Data.Mappings
             builder.HasOne(d => d.Destinatario)
                 .WithMany()
                 .HasForeignKey(d => d.DestinatarioId)
-                .HasConstraintName("FK_Mensagem_Paciente");
+                .HasConstraintName("FK_Mensagem_Paciente")
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.Property(e => e.Tipo)
                 .HasMaxLength(255)

@@ -25,6 +25,7 @@ public class NewCardContext : DbContext
         modelBuilder.ApplyConfiguration(new MedicoMap());
         modelBuilder.ApplyConfiguration(new MensagemMap());
         modelBuilder.ApplyConfiguration(new PacienteMap());
+        modelBuilder.ApplyConfiguration(new FuncionarioMap());
 
     }    
 }

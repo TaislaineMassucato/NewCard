@@ -32,15 +32,17 @@ namespace NewCard.Data.Mappings
                 .IsUnicode(false)
                 .HasColumnName("prescricao");
 
-            builder.HasOne(d => d.Medico)
+            builder.HasOne(d => d.MedicoHC)
                 .WithMany()
                 .HasForeignKey(d => d.MedicoId)
-                .HasConstraintName("FK_HistoricoConsulta_Medico");
+                .HasConstraintName("FK_HistoricoConsulta_Medico")
+                .OnDelete(DeleteBehavior.NoAction);
 
-            builder.HasOne(d => d.Paciente)
+            builder.HasOne(d => d.PacienteHC)
                 .WithMany()
                 .HasForeignKey(d => d.PacienteId)
-                .HasConstraintName("FK_HistoricoConsulta_Paciente");
+                .HasConstraintName("FK_HistoricoConsulta_Paciente")
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }
