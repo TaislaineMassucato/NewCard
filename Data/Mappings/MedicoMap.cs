@@ -34,6 +34,19 @@ namespace NewCard.Data.Mappings
                 .WithMany()
                 .HasForeignKey(d => d.EspecialidadeId)
                 .HasConstraintName("FK_Medico_Especialidade");
+
+            builder.HasMany(m => m.EspecialidadesAdicionais)
+                    .WithMany(e => e.Medicos)
+                    .UsingEntity<Dictionary<string, object>>(
+                        "MedicoEspecialidade",
+                        j => j.HasOne<Especialidade>()
+                        .WithMany()
+                        .HasForeignKey("EspecialidadeId"),
+                        j => j.HasOne<Medico>()
+                        .WithMany()
+                        .HasForeignKey("MedicoId")
+    );
+
         }
     }
 }

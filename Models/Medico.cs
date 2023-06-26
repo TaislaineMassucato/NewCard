@@ -17,4 +17,6 @@ public class Medico
     public Especialidade Especialidade { get; set; }
 
     public ICollection<HistoricoConsulta> HistoricoConsulta { get; set; } = new List<HistoricoConsulta>();
+
+    public ICollection<Especialidade> EspecialidadesAdicionais { get; set; } = new List<Especialidade>();
 }
