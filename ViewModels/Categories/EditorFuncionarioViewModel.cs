@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace NewCard.ViewModels
+namespace NewCard.ViewModels.Categories
 {
     public class EditorFuncionarioViewModel
     {
@@ -11,7 +11,7 @@ namespace NewCard.ViewModels
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Senha Obrigatória")]
-        [StringLength(8, MinimumLength = 5, ErrorMessage ="Este campo deve ter máx 8 e min 5 caracteres ")]
+        [StringLength(8, MinimumLength = 5, ErrorMessage = "Este campo deve ter máx 8 e min 5 caracteres ")]
         public string Senha { get; set; }
     }
 }

@@ -70,6 +70,7 @@ C:\Users\EuTay\OneDrive\Área de Trabalho\NewCard\obj\Debug\net7.0\NewCard.genru
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCard\obj\Debug\net7.0\ref\NewCard.dll
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\appsettings.json
+C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\NewCard.staticwebassets.runtime.json
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\NewCard.exe
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\NewCard.deps.json
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\NewCard.runtimeconfig.json
@@ -140,3 +141,8 @@ C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\obj\Debug\net7.0\refint\N
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\obj\Debug\net7.0\NewCard.pdb
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\obj\Debug\net7.0\NewCard.genruntimeconfig.cache
 C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\obj\Debug\net7.0\ref\NewCard.dll
+C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\EuTay\OneDrive\Área de Trabalho\NewCardPasta\obj\Debug\net7.0\NewCard.MvcApplicationPartsAssemblyInfo.cs

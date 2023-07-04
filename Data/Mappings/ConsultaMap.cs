@@ -16,7 +16,7 @@ namespace NewCard.Data.Mappings
                 .ValueGeneratedOnAdd();
 
             builder.Property(e => e.DataConsulta)
-                .HasColumnType("date")
+                .HasColumnType("DateTime")
                 .HasColumnName("data_consulta");
 
             builder.Property(e => e.HoraConsulta)

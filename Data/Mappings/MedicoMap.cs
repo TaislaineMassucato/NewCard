@@ -13,7 +13,8 @@ namespace NewCard.Data.Mappings
 
             builder.Property(e => e.Id)
                 .HasColumnName("id")
-                .ValueGeneratedOnAdd();
+                .ValueGeneratedOnAdd()
+                .UseIdentityColumn();
 
             builder.Property(e => e.Nome)
                 .HasMaxLength(255)
